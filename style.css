@@ -45,6 +45,15 @@ nav ul li a {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.respuestas {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.respuestas input {
+    margin-right: 10px;
+}
+
 /* Ajustes de estilo para las fichas de aprendizaje */
 .fichas-container {
     display: flex;

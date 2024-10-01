@@ -38,6 +38,49 @@ function agregarPregunta() {
     document.getElementById("nueva-pregunta").value = "";
 }
 
+// Función para agregar una pregunta al foro
+function agregarPregunta() {
+    var nuevaPregunta = document.getElementById("nueva-pregunta").value;
+    var listaPreguntas = document.getElementById("lista-preguntas");
+    
+    // Crear un nuevo elemento de lista
+    var nuevoElemento = document.createElement("li");
+    nuevoElemento.innerText = nuevaPregunta;
+
+    // Crear un contenedor para las respuestas
+    var contenedorRespuestas = document.createElement("div");
+    contenedorRespuestas.classList.add("respuestas");
+    
+    // Crear un campo de respuesta
+    var campoRespuesta = document.createElement("input");
+    campoRespuesta.type = "text";
+    campoRespuesta.placeholder = "Escribe tu respuesta aquí";
+    
+    // Crear un botón para enviar la respuesta
+    var botonRespuesta = document.createElement("button");
+    botonRespuesta.innerText = "Responder";
+    botonRespuesta.onclick = function() {
+        var respuesta = campoRespuesta.value;
+        if (respuesta) {
+            var nuevaRespuesta = document.createElement("p");
+            nuevaRespuesta.innerText = respuesta;
+            contenedorRespuestas.appendChild(nuevaRespuesta);
+            campoRespuesta.value = ""; // Limpiar el campo de respuesta
+        }
+    };
+
+    // Agregar el campo de respuesta y el botón al contenedor de respuestas
+    contenedorRespuestas.appendChild(campoRespuesta);
+    contenedorRespuestas.appendChild(botonRespuesta);
+    
+    // Agregar el contenedor de respuestas al nuevo elemento
+    nuevoElemento.appendChild(contenedorRespuestas);
+    listaPreguntas.appendChild(nuevoElemento);
+    
+    // Limpiar el campo de pregunta
+    document.getElementById("nueva-pregunta").value = "";
+}
+
 // Función para voltear la ficha de aprendizaje
 function voltearFicha(ficha) {
     ficha.classList.toggle('volteada');

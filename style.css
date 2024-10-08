@@ -30,6 +30,13 @@ nav ul li a {
     text-decoration: none;
 }
 
+.espacio {
+    height: 10px; /* Permite que el espacio crezca y ocupe el espacio disponible */
+}
+.espacioFinal{
+    height: 100px;
+}
+
 .contenedor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

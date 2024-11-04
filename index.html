@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - Juegos sobre ética</title>
+    <link icon="icon" href="images/favicon.ico" type="images/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="title">
+            <h1>Juegos de Ética</h1>
+            <p>Profesor encargado: <strong>Miguel Ariza Goenaga</strong></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#memoria" onclick="mostrarSeccion('memoria')">Juego de Memoria</a></li>
+                <li><a href="#etico-moral" onclick="mostrarSeccion('etico-moral')">Ético o Moral</a></li>
+                <li><a href="#foro" onclick="mostrarSeccion('foro')">Foro de Discusión</a></li>
+                <li><a href="#lecturas" onclick="mostrarSeccion('lecturas')">Lecturas</a></li>
+                <li><a href="#fichas" onclick="mostrarSeccion('fichas')">Fichas de Aprendizaje</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+        <!-- Juego de Memoria -->
+        <section id="memoria" class="seccion">
+            <h2>Juego de Memoria</h2>
+            <p class="memoria-p">Relaciona la Frase con su Autor</p>
+
+            <div id="memoria-juego">
+                <p><strong>Frase:</strong> "Todo está perdido cuando los malos sirven de ejemplo y los buenos de mofa"</p>
+                <select  name="seleccion" id="autor-seleccion1">
+                    <option value="">Seleccione una opción</option>
+                    <option value="platon">Platón</option>
+                    <option value="aristoteles">Aristóteles</option>
+                    <option value="democrito">Demócrito</option>
+                </select>
+                <button onclick="verificarMemoria1()">Verificar</button>
+                <p id="resultado-memoria1"></p>
+            </div>
+
+            <div class="espacio"> </div>
+            <div id="memoria-juego2">
+                <p><strong>Frase:</strong> “El mayor bien para el hombre es la adquisición de virtud por medio del conocimiento.”</p>
+                <select id="autor-seleccion2" >
+                    <option value="">Seleccione una opción</option>
+                    <option value="platon">Platón</option>
+                    <option value="Sócrates">Sócrates</option>
+                    <option value="aristoteles">Aristóteles</option>
+                </select>
+                <button onclick="verificarMemoria2()">Verificar</button>
+                <p id="resultado-memoria2"></p>
+            </div>
+
+            <div class="espacio"> </div>
+            <div id="memoria-juego3">
+                <p><strong>Frase:</strong> “El hombre es la medida de todas las cosas.”</p>
+                <select id="autor-seleccion3">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Sócrates">Sócrates</option>
+                    <option value="Protágoras">Protágoras</option>
+                    <option value="Heráclito">Heráclito</option>
+                </select>
+                <button onclick="verificarMemoria3()">Verificar</button>
+                <p id="resultado-memoria3"></p>
+            </div>
+
+            <div class="espacio"> </div>
+            <div id="memoria-juego4">
+                <p><strong>Frase:</strong> Actúa de tal manera que trates a la humanidad, tanto en tu persona como en la de cualquier otro, siempre como un fin y nunca como un medio.”</p>
+                <select id="autor-seleccion4">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Immanuel Kant">Immanuel Kant </option>
+                    <option value="Jean-Paul Sartre">Jean-Paul Sartre</option>
+                    <option value="John Locke">John Locke</option>
+                </select>
+                <button onclick="verificarMemoria4()">Verificar</button>
+                <p id="resultado-memoria4"></p>
+            </div>
+
+            <div class="espacio"> </div>
+            <div id="memoria-juego5">
+                <p><strong>Frase:</strong> “La justicia es la voluntad constante y perpetua de dar a cada uno su derecho.”</p>
+                <select id="autor-seleccion5">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Ulpiano">Ulpiano</option>
+                    <option value="Séneca">Séneca</option>
+                    <option value="Santo Tomás de Aquino">Santo Tomás de Aquino</option>
+                </select>
+                <button onclick="verificarMemoria5()">Verificar</button>
+                <p id="resultado-memoria5"></p>
+            </div>
+
+            <div class="espacio"> </div>
+            <div id="memoria-juego6">
+                <p><strong>Frase:</strong> “La felicidad es el bien supremo, el fin último de la acción humana.”</p>
+                <select id="autor-seleccion6">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Epicuro">Epicuro</option>
+                    <option value="Aristóteles">Aristóteles</option>
+                    <option value="Platón">Platón</option>
+                </select>
+                <button onclick="verificarMemoria6()">Verificar</button>
+                <p id="resultado-memoria6"></p>
+            </div>
+
+            <div class="espacio"> </div>
+            <div id="memoria-juego7">
+                <p><strong>Frase:</strong> “El hombre está condenado a ser libre.”</p>
+                <select id="autor-seleccion7">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Jean-Paul Sartre">Jean-Paul Sartre</option>
+                    <option value="Friedrich Nietzsche">Friedrich Nietzsche</option>
+                    <option value="Karl Marx">Karl Marx</option>
+                </select>
+                <button onclick="verificarMemoria7()">Verificar</button>
+                <p id="resultado-memoria7"></p>
+            </div>
+
+            <div class="espacio"> </div>
+            <div id="memoria-juego8">
+                <p><strong>Frase:</strong> “El utilitarismo sostiene que la mejor acción es aquella que produce la mayor felicidad para el mayor número.”</p>
+                <select id="autor-seleccion8">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Jeremy Bentham">Jeremy Bentham</option>
+                    <option value="David Hume">David Hume</option>
+                    <option value="John Stuart Mill">John Stuart Mill</option>
+                </select>
+                <button onclick="verificarMemoria8()">Verificar</button>
+                <p id="resultado-memoria8"></p>
+            </div>
+
+            <div class="espacio"> </div>
+            <div id="memoria-juego9">
+                <p><strong>Frase:</strong> “La vida que no se examina no merece ser vivida.”</p>
+                <select id="autor-seleccion9">
+                    <option value="">Seleccione una opción</option>
+                    <option value="aristoteles">aristoteles</option>
+                    <option value="Sócrates">Sócrates</option>
+                    <option value="Platón">Platón</option>
+                </select>
+                <button onclick="verificarMemoria9()">Verificar</button>
+                <p id="resultado-memoria9"></p>
+            </div>
+
+            <div class="espacio"> </div>
+            <div id="memoria-juego10">
+                <p><strong>Frase:</strong> “El fin justifica los medios.”</p>
+                <select id="autor-seleccion10">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Maquiavelo">Maquiavelo</option>
+                    <option value="Karl Marx">Karl Marx</option>
+                    <option value="Thomas Hobbes">Thomas Hobbes</option>
+                </select>
+                <button onclick="verificarMemoria10()">Verificar</button>
+                <p id="resultado-memoria10"></p>
+            </div>
+
+        </section>
+
+
+        <!-- Juego Ético o Moral -->
+        <section id="etico-moral" class="seccion">
+            <h2>¿Es Ético o Moral?</h2>
+            <div id="etico-moral-juego">
+                <p><strong>Situación:</strong> Ayudar a un amigo a mentir para evitar una sanción.</p>
+                <button onclick="verificarEtico('etico')">Ético</button>
+                <button onclick="verificarEtico('moral')">Moral</button>
+                <p id="resultado-etico-moral"></p>
+            </div>
+        </section>
+
+        <!-- Foro de Discusión -->
+        <section id="foro" class="seccion">
+            <h2>Foro de Discusión</h2>
+            <div id="foro-seccion">
+                <textarea id="nueva-pregunta" placeholder="Escribe tu pregunta o comentario"></textarea>
+                <button onclick="agregarPregunta()">Publicar</button>
+                <h3>Preguntas y Respuestas:</h3>
+                <ul id="lista-preguntas"></ul>
+            </div>
+        </section>
+
+        <!-- Lecturas Recomendadas -->
+        <section id="lecturas" class="seccion">
+            <h2>Lecturas Recomendadas</h2>
+            <div id="lecturas-lista">
+                <p><a href="lectura1.pdf" download>Lectura 1: Ética y Filosofía</a></p>
+                <p><a href="lectura2.pdf" download>Lectura 2: Moralidad en la Sociedad</a></p>
+            </div>
+        </section>
+
+        <!-- Fichas de Aprendizaje -->
+        <section id="fichas" class="seccion">
+            <h2>Fichas de Aprendizaje</h2>
+            <div class="fichas-container">
+                <div class="ficha" onclick="voltearFicha(this)">
+                    <div class="ficha-frontal">
+                        <p>¿Qué es Ética?</p>
+                    </div>
+                    <div class="ficha-trasera">
+                        <p>La ética es la rama de la filosofía que estudia la moral, los valores y el comportamiento humano.</p>
+                    </div>
+                </div>
+
+                <div class="ficha" onclick="voltearFicha(this)">
+                    <div class="ficha-frontal">
+                        <p>¿Qué es Moral?</p>
+                    </div>
+                    <div class="ficha-trasera">
+                        <p>La moral es el conjunto de normas y valores que rigen el comportamiento de una sociedad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Creado por Juan Miguel Carrasquilla Escobar y Alejandra Valencia Rua, Universidad del Norte</p>
+        <p>&copy; 2024 Clase de Ética</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

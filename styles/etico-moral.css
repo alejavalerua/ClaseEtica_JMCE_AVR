@@ -1,0 +1,20 @@
+.etico-moral {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  width: 520px;
+  align-self: center;
+  background-color: var(--angel);
+  color: var(--swamp-blue2);
+  padding: 1.2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.etico-moral-juego {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  background-color: var(--angel);
+  color: var(--swamp-blue2);
+}

@@ -1,11 +1,11 @@
 // Función para mostrar diferentes secciones
-function mostrarSeccion(seccion) {
-    var secciones = document.querySelectorAll('.seccion');
-    secciones.forEach(function(sec) {
-        sec.style.display = 'none';
-    });
-    document.getElementById(seccion).style.display = 'block';
-}
+// function mostrarSeccion(seccion) {
+//     var secciones = document.querySelectorAll('.seccion');
+//     secciones.forEach(function(sec) {
+//         sec.style.display = 'none';
+//     });
+//     document.getElementById(seccion).style.display = 'block';
+// }
 
 // Función para verificar el juego de memoria
 function verificarMemoria1() {
@@ -126,7 +126,8 @@ function agregarPregunta() {
     
     // Crear un nuevo elemento de lista
     var nuevoElemento = document.createElement("li");
-    nuevoElemento.innerText = nuevaPregunta;
+    nuevoElemento.innerText = 'Pregunta: ' + nuevaPregunta;
+    nuevoElemento.style.fontWeight = "bold";
 
     // Crear un contenedor para las respuestas
     var contenedorRespuestas = document.createElement("div");
@@ -144,7 +145,8 @@ function agregarPregunta() {
         var respuesta = campoRespuesta.value;
         if (respuesta) {
             var nuevaRespuesta = document.createElement("p");
-            nuevaRespuesta.innerText = respuesta;
+            nuevaRespuesta.innerText = 'Respuesta: ' + respuesta;
+            nuevaRespuesta.style.fontWeight = "normal";
             contenedorRespuestas.appendChild(nuevaRespuesta);
             campoRespuesta.value = ""; // Limpiar el campo de respuesta
         }
@@ -168,6 +170,14 @@ function voltearFicha(ficha) {
 }
 
 // Inicializar la primera sección a mostrar
-document.addEventListener("DOMContentLoaded", function() {
-    mostrarSeccion('memoria');
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//     mostrarSeccion('memoria');
+// });
+
+// Lecturas Embedding System
+function changeText(text) {
+    let embedElement = document.querySelector('.embed');
+    if (text) {
+        embedElement.src = "../lecturas/" + text;
+    }
+}

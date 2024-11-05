@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> - Juegos sobre ética</title>
-    <link icon="icon" href="images/favicon.ico" type="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +20,11 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#memoria" onclick="mostrarSeccion('memoria')">Juego de Memoria</a></li>
-                <li><a href="#etico-moral" onclick="mostrarSeccion('etico-moral')">Ético o Moral</a></li>
-                <li><a href="#foro" onclick="mostrarSeccion('foro')">Foro de Discusión</a></li>
-                <li><a href="#lecturas" onclick="mostrarSeccion('lecturas')">Lecturas</a></li>
-                <li><a href="#fichas" onclick="mostrarSeccion('fichas')">Fichas de Aprendizaje</a></li>
+                <li><a href="/">Juego de Memoria</a></li>
+                <li><a href="pages/etico-moral.html">Ético o Moral</a></li>
+                <li><a href="pages/foro.html">Foro de Discusión</a></li>
+                <li><a href="pages/lecturas.html">Lecturas</a></li>
+                <li><a href="pages/fichas.html">Fichas de Aprendizaje</a></li>
             </ul>
         </nav>
     </header>
@@ -163,68 +163,11 @@
                 <button onclick="verificarMemoria10()">Verificar</button>
                 <p id="resultado-memoria10"></p>
             </div>
-
-        </section>
-
-
-        <!-- Juego Ético o Moral -->
-        <section id="etico-moral" class="seccion">
-            <h2>¿Es Ético o Moral?</h2>
-            <div id="etico-moral-juego">
-                <p><strong>Situación:</strong> Ayudar a un amigo a mentir para evitar una sanción.</p>
-                <button onclick="verificarEtico('etico')">Ético</button>
-                <button onclick="verificarEtico('moral')">Moral</button>
-                <p id="resultado-etico-moral"></p>
-            </div>
-        </section>
-
-        <!-- Foro de Discusión -->
-        <section id="foro" class="seccion">
-            <h2>Foro de Discusión</h2>
-            <div id="foro-seccion">
-                <textarea id="nueva-pregunta" placeholder="Escribe tu pregunta o comentario"></textarea>
-                <button onclick="agregarPregunta()">Publicar</button>
-                <h3>Preguntas y Respuestas:</h3>
-                <ul id="lista-preguntas"></ul>
-            </div>
-        </section>
-
-        <!-- Lecturas Recomendadas -->
-        <section id="lecturas" class="seccion">
-            <h2>Lecturas Recomendadas</h2>
-            <div id="lecturas-lista">
-                <p><a href="lectura1.pdf" download>Lectura 1: Ética y Filosofía</a></p>
-                <p><a href="lectura2.pdf" download>Lectura 2: Moralidad en la Sociedad</a></p>
-            </div>
-        </section>
-
-        <!-- Fichas de Aprendizaje -->
-        <section id="fichas" class="seccion">
-            <h2>Fichas de Aprendizaje</h2>
-            <div class="fichas-container">
-                <div class="ficha" onclick="voltearFicha(this)">
-                    <div class="ficha-frontal">
-                        <p>¿Qué es Ética?</p>
-                    </div>
-                    <div class="ficha-trasera">
-                        <p>La ética es la rama de la filosofía que estudia la moral, los valores y el comportamiento humano.</p>
-                    </div>
-                </div>
-
-                <div class="ficha" onclick="voltearFicha(this)">
-                    <div class="ficha-frontal">
-                        <p>¿Qué es Moral?</p>
-                    </div>
-                    <div class="ficha-trasera">
-                        <p>La moral es el conjunto de normas y valores que rigen el comportamiento de una sociedad.</p>
-                    </div>
-                </div>
-            </div>
         </section>
     </div>
 
     <footer>
-        <p>Creado por Juan Miguel Carrasquilla Escobar y Alejandra Valencia Rua, Universidad del Norte</p>
+        <p>Desarrollado por Juan Miguel Carrasquilla Escobar y Alejandra Valencia Rua, Universidad del Norte</p>
         <p>&copy; 2024 Clase de Ética</p>
     </footer>
 

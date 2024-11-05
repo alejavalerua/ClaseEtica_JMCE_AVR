@@ -1,0 +1,69 @@
+.fichas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  align-self: center;
+  background-color: var(--angel);
+  color: var(--swamp-blue2);
+  padding: 20px;
+  margin: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fichas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  font-size: 18px;
+}
+
+.ficha {
+  width: 240px;
+  height: 150px;
+  background-color: var(--boulevard3);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  perspective: 1000px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.ficha-frontal, .ficha-trasera {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ficha-frontal {
+  background-color: var(--boulevard1);
+}
+
+.ficha-trasera {
+  background-color: var(--boulevard2);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.ficha.volteada .ficha-frontal {
+  transform: rotateY(180deg);
+}
+
+.ficha.volteada .ficha-trasera {
+  transform: rotateY(0deg);
+}
+
+.ficha {
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}

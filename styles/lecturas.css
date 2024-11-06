@@ -29,6 +29,15 @@
   gap: 0.5rem;
 }
 
+.lecturas-lista button {
+  background-color: transparent;
+  color: var(--swamp-blue2);
+  font-weight: 600;
+  margin: .5rem 0;
+  padding: 0;
+  cursor: pointer;
+}
+
 embed {
   min-width: 480px;
   height: 600px;

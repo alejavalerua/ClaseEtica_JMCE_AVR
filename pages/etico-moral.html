@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> - Juegos sobre ética</title>
+    <title>Juegos sobre ética</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/etico-moral.css">
@@ -16,7 +16,6 @@
     <header>
         <div class="title">
             <h1>Juegos de Ética</h1>
-            <p>Profesor encargado: <strong>Miguel Ariza Goenaga</strong></p>
         </div>
         <nav>
             <ul>
@@ -32,19 +31,101 @@
     <!-- Juego Ético o Moral -->
     <section id="etico-moral" class="etico-moral">
         <h2>¿Es Ético o Moral?</h2>
+        <div id="etico-moral-juego2" class="etico-moral-juego">
+            <p><strong>Situación:</strong> Un médico decide no revelar a un paciente terminal el pronóstico exacto de su enfermedad para evitarle angustia y mantener su ánimo elevado.</p>
+            <div>
+                <button onclick="verificarEtico2('etico')">Ético</button>
+                <button onclick="verificarEtico2('moral')">Moral</button>
+            </div>
+            <p id="resultado-etico-moral2"></p>
+        </div>
+        <div id="etico-moral-juego3" class="etico-moral-juego">
+            <p><strong>Situación:</strong> Un trabajador se encuentra una billetera llena de dinero en su lugar de trabajo y decide no devolverla porque no hay testigos y cree que no afectará su imagen.</p>
+            <div>
+                <button onclick="verificarEtico3('etico')">Ético</button>
+                <button onclick="verificarEtico3('moral')">Moral</button>
+            </div>
+            <p id="resultado-etico-moral3"></p>
+        </div>
+        <div id="etico-moral-juego4" class="etico-moral-juego">
+            <p><strong>Situación:</strong> Un estudiante copia en un examen porque sabe que sus padres esperan que obtenga una beca, aunque entiende que hacer trampa es incorrecto.</p>
+            <div>
+                <button onclick="verificarEtico4('etico')">Ético</button>
+                <button onclick="verificarEtico4('moral')">Moral</button>
+            </div>
+            <p id="resultado-etico-moral4"></p>
+        </div>
+        <div id="etico-moral-juego5" class="etico-moral-juego">
+            <p><strong>Situación:</strong> Una empresa ofrece productos de excelente calidad, pero con precios altos, limitando el acceso solo a personas de cierto nivel económico.</p>
+            <div>
+                <button onclick="verificarEtico5('etico')">Ético</button>
+                <button onclick="verificarEtico5('moral')">Moral</button>
+            </div>
+            <p id="resultado-etico-moral5"></p>
+        </div>
+        <div id="etico-moral-juego6" class="etico-moral-juego">
+            <p><strong>Situación:</strong> Un político es honesto en su discurso, pero en sus prácticas diarias participa en acuerdos corruptos para obtener beneficios personales.</p>
+            <div>
+                <button onclick="verificarEtico6('etico')">Ético</button>
+                <button onclick="verificarEtico6('moral')">Moral</button>
+            </div>
+            <p id="resultado-etico-moral6"></p>
+        </div>
+        <div id="etico-moral-juego7" class="etico-moral-juego">
+            <p><strong>Situación:</strong> Una persona decide no apoyar una causa social de gran relevancia porque no coincide con sus creencias religiosas, aunque sepa que puede ayudar a otros.</p>
+            <div>
+                <button onclick="verificarEtico7('etico')">Ético</button>
+                <button onclick="verificarEtico7('moral')">Moral</button>
+            </div>
+            <p id="resultado-etico-moral7"></p>
+        </div>
+        <div id="etico-moral-juego8" class="etico-moral-juego">
+            <p><strong>Situación:</strong> Un directivo es consciente de que su empresa contribuye a la contaminación, pero justifica las acciones porque la empresa genera muchos empleos.</p>
+            <div>
+                <button onclick="verificarEtico8('etico')">Ético</button>
+                <button onclick="verificarEtico8('moral')">Moral</button>
+            </div>
+            <p id="resultado-etico-moral8"></p>
+        </div>
+        <div id="etico-moral-juego9" class="etico-moral-juego">
+            <p><strong>Situación:</strong> Un amigo es invitado a una fiesta donde habrá consumo de sustancias ilegales. Aunque él sabe que está mal, decide ir para no sentirse excluido.</p>
+            <div>
+                <button onclick="verificarEtico9('etico')">Ético</button>
+                <button onclick="verificarEtico9('moral')">Moral</button>
+            </div>
+            <p id="resultado-etico-moral9"></p>
+        </div>
+        <div id="etico-moral-juego10" class="etico-moral-juego">
+            <p><strong>Situación:</strong> Una profesora favorece a un alumno que admira por su dedicación, dándole calificaciones más altas de lo que realmente merece.</p>
+            <div>
+                <button onclick="verificarEtico10('etico')">Ético</button>
+                <button onclick="verificarEtico10('moral')">Moral</button>    
+            </div>
+            <p id="resultado-etico-moral10"></p>
+        </div>
         <div id="etico-moral-juego" class="etico-moral-juego">
             <p><strong>Situación:</strong> Ayudar a un amigo a mentir para evitar una sanción.</p>
-            <button onclick="verificarEtico('etico')">Ético</button>
-            <button onclick="verificarEtico('moral')">Moral</button>
+            <div>
+                <button onclick="verificarEtico('etico')">Ético</button>
+                <button onclick="verificarEtico('moral')">Moral</button>    
+            </div>
             <p id="resultado-etico-moral"></p>
         </div>
     </section>
-
+    
     <!-- Footer -->
     <footer>
-        <p>Desarrollado por Juan Miguel Carrasquilla Escobar y Alejandra Valencia Rua, Universidad del Norte</p>
-        <p>&copy; 2024 Clase de Ética</p>
+        <p>Desarrollado por 
+            <strong>
+                Juan Miguel Carrasquilla Escobar
+            </strong>y
+            <strong>
+                Alejandra Valencia Rua</strong>, Universidad del Norte</p>
+        <p>
+            &copy; 2024 Clase de Ética.
+            Profesor encargado: <strong>Miguel Ariza Goenaga</strong>.
+        </p>
     </footer>
-
+    
     <script src="../scripts.js"></script>
 </body>

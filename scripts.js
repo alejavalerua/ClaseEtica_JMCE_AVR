@@ -1,12 +1,3 @@
-// Función para mostrar diferentes secciones
-// function mostrarSeccion(seccion) {
-//     var secciones = document.querySelectorAll('.seccion');
-//     secciones.forEach(function(sec) {
-//         sec.style.display = 'none';
-//     });
-//     document.getElementById(seccion).style.display = 'block';
-// }
-
 // Función para verificar el juego de memoria
 function verificarMemoria1() {
     var seleccion = document.getElementById("autor-seleccion1").value;
@@ -109,60 +100,142 @@ function verificarEtico(opcion) {
     }
 }
 
-// Función para agregar una pregunta al foro
-function agregarPregunta() {
-    var nuevaPregunta = document.getElementById("nueva-pregunta").value;
-    var listaPreguntas = document.getElementById("lista-preguntas");
-    var nuevoElemento = document.createElement("li");
-    nuevoElemento.innerText = nuevaPregunta;
-    listaPreguntas.appendChild(nuevoElemento);
-    document.getElementById("nueva-pregunta").value = "";
+function verificarEtico2(opcion) {
+    var resultado = document.getElementById("resultado-etico-moral2");
+    if (opcion === "etico") {
+        resultado.innerText = "En ética médica, existe el principio de 'no maleficencia', que busca evitar el sufrimiento innecesario del paciente. Aunque la transparencia es importante, el médico puede considerar ético minimizar el daño emocional del paciente, priorizando su bienestar.";
+    } else {
+        resultado.innerText = "Incorrecto.";
+    }
+}
+
+function verificarEtico3(opcion) {
+    var resultado = document.getElementById("resultado-etico-moral3");
+    if (opcion === "moral") {
+        resultado.innerText = "La decisión de quedarse con la billetera depende de la moralidad personal del trabajador, que puede estar influida por sus valores individuales o culturales. Éticamente, la honestidad es esperada en cualquier circunstancia laboral, pero el trabajador actúa según su moral.";
+    } else {
+        resultado.innerText = "Incorrecto.";
+    }
+}
+
+function verificarEtico4(opcion) {
+    var resultado = document.getElementById("resultado-etico-moral4");
+    if (opcion === "moral") {
+        resultado.innerText = "La moralidad del estudiante está en conflicto, ya que sus valores personales pueden estar influenciados por la presión familiar, mientras que éticamente, la honestidad académica condena la trampa.";
+    } else {
+        resultado.innerText = "Incorrecto.";
+    }
+}
+
+function verificarEtico5(opcion) {
+    var resultado = document.getElementById("resultado-etico-moral5");
+    if (opcion === "etico") {
+        resultado.innerText = "La ética empresarial puede evaluar temas de accesibilidad y equidad. Aunque algunos podrían verlo moralmente cuestionable, el enfoque ético se centra en las decisiones de mercado que, aunque excluyan a ciertos segmentos, cumplen con sus propios estándares éticos de calidad y exclusividad.";
+    } else {
+        resultado.innerText = "Incorrecto.";
+    }
+}
+
+
+function verificarEtico6(opcion) {
+    var resultado = document.getElementById("resultado-etico-moral6");
+    if (opcion === "etico") {
+        resultado.innerText = "La ética política exige honestidad y transparencia en todos los niveles, no solo en el discurso. Aunque pueda justificarlo moralmente para 'beneficiar a su círculo', sus actos se alejan de la ética pública y la responsabilidad que debería tener.";
+    } else {
+        resultado.innerText = "Incorrecto.";
+    }
+}
+
+function verificarEtico7(opcion) {
+    var resultado = document.getElementById("resultado-etico-moral7");
+    if (opcion === "moral") {
+        resultado.innerText = "Esta es una decisión moral, ya que se basa en creencias personales o religiosas, que guían el comportamiento individual. La ética podría promover la ayuda universal, pero la moralidad personal influye en su decisión.";
+    } else {
+        resultado.innerText = "Incorrecto.";
+    }
+}
+
+function verificarEtico8(opcion) {
+    var resultado = document.getElementById("resultado-etico-moral8");
+    if (opcion === "etico") {
+        resultado.innerText = "La ética empresarial y ambiental promueve el respeto al medio ambiente. Aunque el directivo moralmente se justifique para mantener los empleos, desde un punto de vista ético debería buscar prácticas que no dañen el ambiente.";
+    } else {
+        resultado.innerText = "Incorrecto.";
+    }
+}
+
+function verificarEtico9(opcion) {
+    var resultado = document.getElementById("resultado-etico-moral9");
+    if (opcion === "moral") {
+        resultado.innerText = "Esta decisión se basa en la moralidad personal, influida por la presión social y los valores individuales. Éticamente, evitar el consumo de sustancias ilegales es esperado, pero aquí prevalece la moralidad personal.";
+    } else {
+        resultado.innerText = "Incorrecto.";
+    }
+}
+
+function verificarEtico10(opcion) {
+    var resultado = document.getElementById("resultado-etico-moral10");
+    if (opcion === "etico") {
+        resultado.innerText = "La ética profesional exige imparcialidad y justicia. Aunque la moralidad de la profesora pueda guiarla a 'premiar' al alumno, su deber ético es evaluar objetivamente.";
+    } else {
+        resultado.innerText = "Incorrecto.";
+    }
 }
 
 // Función para agregar una pregunta al foro
-function agregarPregunta() {
-    var nuevaPregunta = document.getElementById("nueva-pregunta").value;
-    var listaPreguntas = document.getElementById("lista-preguntas");
-    
-    // Crear un nuevo elemento de lista
-    var nuevoElemento = document.createElement("li");
-    nuevoElemento.innerText = 'Pregunta: ' + nuevaPregunta;
-    nuevoElemento.style.fontWeight = "bold";
+// function agregarPregunta() {
+//     var nuevaPregunta = document.getElementById("nueva-pregunta").value;
+//     var listaPreguntas = document.getElementById("lista-preguntas");
+//     var nuevoElemento = document.createElement("li");
+//     nuevoElemento.innerText = nuevaPregunta;
+//     listaPreguntas.appendChild(nuevoElemento);
+//     document.getElementById("nueva-pregunta").value = "";
+// }
 
-    // Crear un contenedor para las respuestas
-    var contenedorRespuestas = document.createElement("div");
-    contenedorRespuestas.classList.add("respuestas");
+// // Función para agregar una pregunta al foro
+// function agregarPregunta() {
+//     var nuevaPregunta = document.getElementById("nueva-pregunta").value;
+//     var listaPreguntas = document.getElementById("lista-preguntas");
     
-    // Crear un campo de respuesta
-    var campoRespuesta = document.createElement("input");
-    campoRespuesta.type = "text";
-    campoRespuesta.placeholder = "Escribe tu respuesta aquí";
-    
-    // Crear un botón para enviar la respuesta
-    var botonRespuesta = document.createElement("button");
-    botonRespuesta.innerText = "Responder";
-    botonRespuesta.onclick = function() {
-        var respuesta = campoRespuesta.value;
-        if (respuesta) {
-            var nuevaRespuesta = document.createElement("p");
-            nuevaRespuesta.innerText = 'Respuesta: ' + respuesta;
-            nuevaRespuesta.style.fontWeight = "normal";
-            contenedorRespuestas.appendChild(nuevaRespuesta);
-            campoRespuesta.value = ""; // Limpiar el campo de respuesta
-        }
-    };
+//     // Crear un nuevo elemento de lista
+//     var nuevoElemento = document.createElement("li");
+//     nuevoElemento.innerText = 'Pregunta: ' + nuevaPregunta;
+//     nuevoElemento.style.fontWeight = "bold";
 
-    // Agregar el campo de respuesta y el botón al contenedor de respuestas
-    contenedorRespuestas.appendChild(campoRespuesta);
-    contenedorRespuestas.appendChild(botonRespuesta);
+//     // Crear un contenedor para las respuestas
+//     var contenedorRespuestas = document.createElement("div");
+//     contenedorRespuestas.classList.add("respuestas");
     
-    // Agregar el contenedor de respuestas al nuevo elemento
-    nuevoElemento.appendChild(contenedorRespuestas);
-    listaPreguntas.appendChild(nuevoElemento);
+//     // Crear un campo de respuesta
+//     var campoRespuesta = document.createElement("input");
+//     campoRespuesta.type = "text";
+//     campoRespuesta.placeholder = "Escribe tu respuesta aquí";
     
-    // Limpiar el campo de pregunta
-    document.getElementById("nueva-pregunta").value = "";
-}
+//     // Crear un botón para enviar la respuesta
+//     var botonRespuesta = document.createElement("button");
+//     botonRespuesta.innerText = "Responder";
+//     botonRespuesta.onclick = function() {
+//         var respuesta = campoRespuesta.value;
+//         if (respuesta) {
+//             var nuevaRespuesta = document.createElement("p");
+//             nuevaRespuesta.innerText = 'Respuesta: ' + respuesta;
+//             nuevaRespuesta.style.fontWeight = "normal";
+//             contenedorRespuestas.appendChild(nuevaRespuesta);
+//             campoRespuesta.value = ""; // Limpiar el campo de respuesta
+//         }
+//     };
+
+//     // Agregar el campo de respuesta y el botón al contenedor de respuestas
+//     contenedorRespuestas.appendChild(campoRespuesta);
+//     contenedorRespuestas.appendChild(botonRespuesta);
+    
+//     // Agregar el contenedor de respuestas al nuevo elemento
+//     nuevoElemento.appendChild(contenedorRespuestas);
+//     listaPreguntas.appendChild(nuevoElemento);
+    
+//     // Limpiar el campo de pregunta
+//     document.getElementById("nueva-pregunta").value = "";
+// }
 
 // Función para voltear la ficha de aprendizaje
 function voltearFicha(ficha) {
@@ -180,4 +253,93 @@ function changeText(text) {
     if (text) {
         embedElement.src = "../lecturas/" + text;
     }
+}
+
+// Foro Function
+// Cargar las preguntas desde el backend al iniciar la página
+window.onload = function() {
+    fetch("http://localhost:3000/api/preguntas")
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(function(pregunta) {
+                agregarPreguntaAlDOM(pregunta.texto, pregunta.respuestas);
+            });
+        })
+        .catch(error => console.error("Error al cargar las preguntas:", error));
+};
+
+// Función para agregar una pregunta al foro y guardarla
+function agregarPregunta() {
+    var nuevaPregunta = document.getElementById("nueva-pregunta").value;
+    if (nuevaPregunta.trim() === "") return; // No agregar preguntas vacías
+
+    var nuevaPreguntaObj = { texto: nuevaPregunta, respuestas: [] };
+
+    // Enviar la nueva pregunta al backend
+    fetch("http://localhost:3000/api/preguntas", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(nuevaPreguntaObj)
+    })
+    .then(response => {
+        if (response.ok) {
+            agregarPreguntaAlDOM(nuevaPreguntaObj.texto, nuevaPreguntaObj.respuestas);
+            document.getElementById("nueva-pregunta").value = "";
+        } else {
+            console.error("Error al guardar la pregunta");
+        }
+    })
+    .catch(error => console.error("Error al enviar la pregunta:", error));
+}
+
+// Función para agregar una pregunta al DOM
+function agregarPreguntaAlDOM(textoPregunta, respuestas) {
+    var listaPreguntas = document.getElementById("lista-preguntas");
+
+    // Crear un nuevo elemento de lista
+    var nuevoElemento = document.createElement("li");
+    nuevoElemento.innerText = 'Pregunta: ' + textoPregunta;
+    nuevoElemento.style.fontWeight = "bold";
+
+    // Crear un contenedor para las respuestas
+    var contenedorRespuestas = document.createElement("div");
+    contenedorRespuestas.classList.add("respuestas");
+
+    // Crear un campo de respuesta
+    var campoRespuesta = document.createElement("input");
+    campoRespuesta.type = "text";
+    campoRespuesta.placeholder = "Escribe tu respuesta aquí";
+
+    // Crear un botón para enviar la respuesta
+    var botonRespuesta = document.createElement("button");
+    botonRespuesta.innerText = "Responder";
+    botonRespuesta.onclick = function() {
+        var respuesta = campoRespuesta.value;
+        if (respuesta) {
+            var nuevaRespuesta = document.createElement("p");
+            nuevaRespuesta.innerText = 'Respuesta: ' + respuesta;
+            nuevaRespuesta.style.fontWeight = "normal";
+            contenedorRespuestas.appendChild(nuevaRespuesta);
+
+            campoRespuesta.value = ""; // Limpiar el campo de respuesta
+        }
+    };
+
+    // Agregar el campo de respuesta y el botón al contenedor de respuestas
+    contenedorRespuestas.appendChild(campoRespuesta);
+    contenedorRespuestas.appendChild(botonRespuesta);
+
+    // Agregar respuestas previamente guardadas al contenedor
+    respuestas.forEach(function(respuesta) {
+        var nuevaRespuesta = document.createElement("p");
+        nuevaRespuesta.innerText = 'Respuesta: ' + respuesta;
+        nuevaRespuesta.style.fontWeight = "normal";
+        contenedorRespuestas.appendChild(nuevaRespuesta);
+    });
+
+    // Agregar el contenedor de respuestas al nuevo elemento
+    nuevoElemento.appendChild(contenedorRespuestas);
+    listaPreguntas.appendChild(nuevoElemento);
 }
